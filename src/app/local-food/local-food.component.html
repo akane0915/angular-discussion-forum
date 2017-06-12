@@ -3,3 +3,6 @@
 <ul *ngFor="let foodPost of foodPosts" (click) = "goToDetailPage(foodPost)">
   <li class="food-post-link">{{foodPost.header}}</li>
 </ul>
+<hr>
+
+<app-new-post (newPostSender)="newPost($event)"></app-new-post>

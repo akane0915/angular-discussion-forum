@@ -10,6 +10,7 @@ import { LocalFoodComponent } from './local-food/local-food.component';
 import { TrailsComponent } from './trails/trails.component';
 import { FictionComponent } from './fiction/fiction.component';
 import { PostDetailComponent } from './post-detail/post-detail.component';
+import { NewPostComponent } from './new-post/new-post.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PostDetailComponent } from './post-detail/post-detail.component';
     LocalFoodComponent,
     TrailsComponent,
     FictionComponent,
-    PostDetailComponent
+    PostDetailComponent,
+    NewPostComponent
   ],
   imports: [
     BrowserModule,

@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { Post } from '../post.model';
 import { Router } from '@angular/router';
 import { PostService } from '../post.service';
+import { POSTS } from '../mock-posts'
 
 @Component({
   selector: 'app-local-food',
@@ -11,7 +12,6 @@ import { PostService } from '../post.service';
 })
 
 export class LocalFoodComponent implements OnInit {
-
   constructor(private router: Router, private postService: PostService) {}
 
   foodPosts: Post[];
@@ -20,9 +20,11 @@ export class LocalFoodComponent implements OnInit {
     this.foodPosts = this.postService.getPosts();
   }
 
-
   goToDetailPage(foodPost: Post) {
     this.router.navigate(['posts', foodPost.id]);
   };
 
+  newPost(postToAdd: Post) {
+
+  }
 }

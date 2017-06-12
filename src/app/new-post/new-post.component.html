@@ -1,0 +1,13 @@
+<h2>New Post:</h2>
+
+<div>
+  <label>Post Header:</label>
+  <input #newHeader>
+  <label>Post Body:</label>
+  <input #newBody>
+  <label>Post Link:</label>
+  <input #newLink>
+  <label>Post Id:</label>
+  <input #newId>
+  <button (click)="newPost(newHeader.value, newBody.value, newLink.value, newId.value)">Add</button>
+</div>
