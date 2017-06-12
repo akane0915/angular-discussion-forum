@@ -6,11 +6,17 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { routing } from './app.routing';
+import { LocalFoodComponent } from './local-food/local-food.component';
+import { TrailsComponent } from './trails/trails.component';
+import { FictionComponent } from './fiction/fiction.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    LocalFoodComponent,
+    TrailsComponent,
+    FictionComponent
   ],
   imports: [
     BrowserModule,
