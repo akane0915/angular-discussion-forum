@@ -9,6 +9,7 @@ import { routing } from './app.routing';
 import { LocalFoodComponent } from './local-food/local-food.component';
 import { TrailsComponent } from './trails/trails.component';
 import { FictionComponent } from './fiction/fiction.component';
+import { PostDetailComponent } from './post-detail/post-detail.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FictionComponent } from './fiction/fiction.component';
     WelcomeComponent,
     LocalFoodComponent,
     TrailsComponent,
-    FictionComponent
+    FictionComponent,
+    PostDetailComponent
   ],
   imports: [
     BrowserModule,
